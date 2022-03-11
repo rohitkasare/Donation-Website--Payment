@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1">
+        <meta name="robots" content="index, follow">
+        <meta name="description" content="If you want your checkbook to follow your heart, make a donation to those doing work you support. . . Organized By. The Spark Foundation. ">
+
+        <meta property="og:title" content="Pay for Donation Campaign by Rohit Kasare">
+        <meta property="og:image" content="https://cdn.razorpay.com/logos/J2czGg7AsgEja0_large.png">
+        <meta property="og:image:width" content="276px">
+        <meta property="og:image:height" content="276px">
+        <meta property="og:description" content="If you want your checkbook to follow your heart, make a donation to those doing work you support. . . Organized By. The Spark Foundation. ">
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Pay for Donation Campaign by Rohit Kasare" />
+        <meta name="twitter:description" content="If you want your checkbook to follow your heart, make a donation to those doing work you support. . . Organized By. The Spark Foundation. " />
+        <meta name="twitter:image" content="https://cdn.razorpay.com/logos/J2czGg7AsgEja0_large.png" />
+
+        <link rel="icon" href="https://razorpay.com/favicon.png" type="image/x-icon" />
+        
+
+        <style>
+            body {
+                background-color: #efefef;
+            }
+        </style>
+
+                            
+        <script>
+            var data = {"key_id":"rzp_test_lO0eMUpXhgezBB","is_test_mode":true,"environment":"production","merchant":{"id":"J2bxLvtFYUyvk8","name":"Rohit Kasare","image":"https:\/\/cdn.razorpay.com\/logos\/J2czGg7AsgEja0_large.png","brand_color":"rgb(29,84,42)","brand_text_color":"#ffffff","branding_variant":"control","contact_optional":false,"email_optional":false,"support_email":"","support_mobile":"","tnc_link":null},"payment_link":{"id":"pl_J2d9QvJf39hieC","amount":null,"currency":"INR","currency_symbol":"₹","expire_by":null,"times_payable":null,"times_paid":0,"status":"active","status_reason":null,"short_url":"https:\/\/rzp.io\/l\/apYENfAdBe","receipt":null,"title":"Donation Campaign","description":"{\"value\":[{\"attributes\":{\"bold\":true},\"insert\":\"If you want your checkbook to follow your heart, make a donation to those doing work you support\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Organized By\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"The Spark Foundation\\n\"}],\"metaText\":\"If you want your checkbook to follow your heart, make a donation to those doing work you support. . . Organized By. The Spark Foundation. \"}","support_contact":"9987461442","support_email":"rohitkasare1505@gmailcom","terms":null,"type":"payment","payment_page_items":[{"id":"ppi_J2d9R09HxkXO3f","entity":"payment_page_item","payment_link_id":"pl_J2d9QvJf39hieC","item":{"id":"item_J2d9R0Ui18Msar","active":true,"name":"Amount","description":null,"amount":null,"unit_amount":null,"currency":"INR","type":"payment_page","unit":null,"tax_inclusive":false,"hsn_code":null,"sac_code":null,"tax_rate":null,"tax_id":null,"tax_group_id":null,"created_at":1646313603},"mandatory":false,"image_url":null,"min_purchase":null,"max_purchase":null,"min_amount":null,"max_amount":null,"settings":{"position":"0"},"plan_id":null,"product_config":null,"quantity_available":null}],"hosted_template_id":null,"udf_jsonschema_id":null,"min_amount_value":100,"amount_formatted":"0.00","expire_by_formatted":null,"settings":{"allow_social_share":"1","udf_schema":"[{\"name\":\"email\",\"required\":true,\"title\":\"Email\",\"type\":\"string\",\"pattern\":\"email\",\"settings\":{\"position\":1}},{\"name\":\"phone\",\"title\":\"Phone\",\"required\":true,\"type\":\"number\",\"pattern\":\"phone\",\"minLength\":\"8\",\"options\":[],\"settings\":{\"position\":2}}]","checkout_options":{"email":"email","phone":"phone"},"payment_button_label":"Pay","version":"V2","enable_receipt":"1","selected_udf_field":"","enable_custom_serial_number":"0","enable_80g_details":"0","theme":"light"}},"base_url":"https:\/\/api.razorpay.com","org":{"branding":{"show_rzp_logo":true,"branding_logo":""},"custom_code":"rzp"},"view_preferences":{"exempt_customer_flagging":false,"page_load_optimization_enabled":"on","disclaimer_text_enabled":"on"},"keyless_header":"api_v1:69isVk+zQ4gAiB6gtRWHqPrCmKC4H+XhNUe\/GAj1Pzfp6nBdfZExLiIwZ6OiPLXpAcq9qnj7A6rkVHhH7DGNSJDFTkp5Ug=="};
+
+            var paymentPageData = data.payment_link;
+            paymentPageData.description = paymentPageData.description ? JSON.parse(paymentPageData.description).value : null;
+
+            var requestParams = [];
+
+            var templateData = {
+                key_id: data.key_id,
+                base_url: data.base_url,
+                is_test_mode: data.is_test_mode,
+                merchant: data.merchant,
+                org: data.org,
+                payment_page_data: data.payment_link,
+                context: {
+                  page_title: data.payment_link.title,
+                  form_title: 'Payment Details'
+                },
+                requestParams: requestParams,
+                view_preferences: data.view_preferences,
+                keyless_header: data.keyless_header,
+              };
+        </script>
+
+                    <script>
+                function renderPaymentPage() {
+                    window.RZP.renderApp('paymentpage-container', templateData);
+                }
+            </script>
+
+            <script src="https://cdn.razorpay.com/static/analytics/bundle.js" defer></script>
+            <script src="https://cdn.razorpay.com/static/assets/color.js" defer></script>
+            <script src="https://cdn.razorpay.com/static/hosted/wysiwyg.js" onload="renderPaymentPage()" defer></script>
+                        </head>
+
+    <body>
+        <div id="paymentpage-container">
+                    </div>
+        <!-- Adding checkout scripts after initial load -->
+                    <script>
+                window.addEventListener('load', function() {
+                    setTimeout(() => {
+                        var script = document.createElement("script");
+                        script.src = "https://checkout.razorpay.com/v1/checkout.js";
+                        document.body.appendChild(script);
+                    }, 2000);
+                });
+            </script>
+            </body>
+</html>
